@@ -1,2 +1,1 @@
-# bilstm-crf-java
-java实现bilstm+crf
+Bi-LSTM+CRF的java实现
