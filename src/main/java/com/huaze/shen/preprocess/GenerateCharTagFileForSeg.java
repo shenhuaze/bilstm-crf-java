@@ -1,4 +1,4 @@
-package com.huaze.shen.data;
+package com.huaze.shen.preprocess;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,7 +11,7 @@ import java.io.FileWriter;
  *
  * 将分词标注数据转换为char-tag文件
  */
-public class SegCharTagFileGeneration {
+public class GenerateCharTagFileForSeg {
     private void convertTextFileToFeatureFile(String textFile, String charTagFile) {
         try {
             BufferedReader textFileReader = new BufferedReader(new FileReader(textFile));
@@ -52,6 +52,6 @@ public class SegCharTagFileGeneration {
         String resourcesDir = "src/main/resources/";
         String textFile = resourcesDir + "data/seg/pku_test_gold.utf8";
         String charTagFile = resourcesDir + "data/seg/pku_seg_char_tag.txt";
-        new SegCharTagFileGeneration().convertTextFileToFeatureFile(textFile, charTagFile);
+        new GenerateCharTagFileForSeg().convertTextFileToFeatureFile(textFile, charTagFile);
     }
 }
