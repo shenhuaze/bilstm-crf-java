@@ -1,1 +1,1 @@
-Bi-LSTM+CRF的java实现
+Implementation of Bi-LSTM+CRF based on Java.
